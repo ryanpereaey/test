@@ -364,7 +364,7 @@ Analytics.AddUniversalProperty = function(a, b) {F
     Analytics.AddProperty(a, Analytics.UNIVERSAL, b)
 };
 Analytics.TrackPageView = function() {
-    Analytics.accountType == Analytics.CLASSIC ? Analytics.trackHash ? gtag("config", a) : gtag("config", a) : Analytics.accountType == Analytics.UNIVERSAL && ga && (Analytics.trackHash ? gtag("config", a, { location.pathname + location.search + location.hash}) : gtag("config", a))
+    Analytics.accountType == Analytics.CLASSIC ? Analytics.trackHash ? gtag("config", a) : gtag("config", a) : Analytics.accountType == Analytics.UNIVERSAL && ga && (Analytics.trackHash ? gtag("config", a) : gtag("config", a))
 };
 Analytics.TrackEvent = function(a, b, c, d) {
     if (Analytics.isProduction) {
