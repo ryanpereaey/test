@@ -342,7 +342,7 @@ Analytics.AddProperty = function(a, b, c) {
             Analytics.accountType = b;
             window.GoogleAnalyticsObject = "ga";  
             ga = function() {
-                (ga.q = ga.q || []).push(arguments)
+                (ga = ga || []).push(arguments)
             };
             ga.l = 1 * new Date;
             b = document.createElement("script");
